@@ -12,11 +12,11 @@ When you run `sga -g`, it will run `git init`, add a `.gitignore` and `README.md
 
 ```shell
 npm install -g sga
-//或者
+// or
 yarn global add sga
 ```
 
-## 使用
+## Usages
 
 There is only one command: sga, task is specified by options.
 
