@@ -34,22 +34,23 @@ Add `babel`.
 
 Add `mocha` and `chai` with `npm`
 
-#### Generate a webpack with vue project
-
+#### webpack with vue
 
 `sga -v`
 
 Now `yarn start` and `yarn dev` are available. Or `npm run start` and `npm run dev`
+
 **This will add all stuff, so don't run this if `eslint` or other packages are installed already.**
 
-#### Generate a webpack project
-
-And you can not add `vue` later, cuz that option will add all stuff.
+#### webpack
 
 `sga -w`
 
 Now `yarn start` and `yarn dev` are available. Or `npm run start` and `npm run dev`
+
 **This will add all stuff, so don't run this if `eslint` or other packages are installed already.**
+
+And you can not add `vue` later, cuz that option will add all stuff.
 
 ### All options
 
