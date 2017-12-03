@@ -1,0 +1,8 @@
+exports.ESLINT = 'eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard'
+exports.BABEL = 'babel-core babel-preset-env babel-preset-stage-3 babel-plugin-transform-runtime'
+exports.MOCHA = 'cross-env mocha chai'
+exports.JEST = 'cross-env jest babel-core babel-jest'
+exports.WEBPACK = 'webpack webpack-dev-server html-webpack-plugin url-loader file-loader css-loader style-loader stylus stylus-loader extract-text-webpack-plugin uglifyjs-webpack-plugin optimize-css-assets-webpack-plugin compression-webpack-plugin babel-loader eslint-loader eslint-plugin-html rimraf cross-env'
+exports.POSTCSS = 'postcss postcss-loader autoprefixer'
+exports.VUE = 'vue vue-router vuex'
+exports.VUEDEV = 'vue-loader vue-template-compiler vue-jest eslint-plugin-vue'

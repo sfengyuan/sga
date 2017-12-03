@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha --reporter=nyan test/**/*.js"
+  }
+}

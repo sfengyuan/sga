@@ -1,0 +1,60 @@
+html
+  font-size 10px
+  font-family sans-serif
+body
+  margin 0 auto
+
+body *
+  box-sizing border-box
+a
+  text-decoration none
+ul, ol, dl
+  list-style-type none
+  padding 0
+  margin 0
+input, button
+  appearance none
+  outline none
+  background none
+  border none
+  padding none
+  vertical-align baseline
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+select
+  appearance none
+body
+  font-family -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif
+  font-size 1.4rem
+  color cr_text
+code
+  font-family 'Source Code Pro', Consolas, monospace
+  color #666
+  border-left 1px solid #333
+  background #eee
+  overflow auto
+button:hover, a:hover
+  cursor pointer
+a
+  color cr_primary2
+.btn
+  font-size 14px
+  display block
+  text-align center
+  border 1px solid cr_primary
+  padding 1rem 0
+  &:hover
+    border 1px solid cr_primary2
+.error
+  border 1px solid cr_danger
+
+.clearfix:before, .clearfix:after
+  content ""
+  display table
+
+.clearfix:after
+  clear both
+.single-line-text
+  overflow hidden
+  text-overflow:ellipsis
+  white-space: nowrap
