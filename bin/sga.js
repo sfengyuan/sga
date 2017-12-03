@@ -15,7 +15,6 @@ program
   .option('-j, --jest', 'Add jest.')
   .parse(process.argv)
 
-
 const tool = {
   yarn: undefined,
   npm: undefined
