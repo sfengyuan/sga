@@ -6,6 +6,7 @@
     "sga": "bin/sga.js"
   },
   "scripts": {
+    "prepare": "yarn test",
     "test": "mocha test/**/*.js"
   },
   "author": "Jacob <jacob.sun.meta@gmail.com>",

@@ -1,5 +1,8 @@
 {
   "main": "src/main.js",
+  "scripts": {
+    "prepare": ""
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
