@@ -1,6 +1,6 @@
 # Sga
 
-Frontend project generator with one command.
+Project generator with one command.
 
 This tool will not only generate skeletons, but also **install packages**.
 
