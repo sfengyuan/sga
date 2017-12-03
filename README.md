@@ -22,35 +22,34 @@ There is only one command: sga, task is specified by options.
 
 ### Examples
 
-`sga -e`
+#### `sga -e`
 
-If the current directory is not initialized, it will initialize it first, then add `eslint`, since there is no package lock and `-n` (use npm) or `-y` (use yarn), it will use `yarn`
-It will also add `lint` scripts to package.json.
+Add `eslint` and a `lint` script.
 
-`sga -b`
+#### `sga -b`
 
-Since there is a `yarn.lock`, it will use `yarn` to add `babel`.
+Add `babel`.
 
-`sga -nm`
+#### `sga -nm`
 
-`-n` (use npm) will be omitted, since there is `yarn.lock`, it will add `mock` and `chai`, and a `test` scripts.
+Add `mocha` and `chai` with `npm`
 
 #### Generate a webpack with vue project
 
-**This will add all stuff, so don't run this if `eslint` or other packages are installed already.**
 
 `sga -v`
 
 Now `yarn start` and `yarn dev` are available. Or `npm run start` and `npm run dev`
+**This will add all stuff, so don't run this if `eslint` or other packages are installed already.**
 
 #### Generate a webpack project
 
-**This will add all stuff, so don't run this if `eslint` or other packages are installed already.**
 And you can not add `vue` later, cuz that option will add all stuff.
 
 `sga -w`
 
 Now `yarn start` and `yarn dev` are available. Or `npm run start` and `npm run dev`
+**This will add all stuff, so don't run this if `eslint` or other packages are installed already.**
 
 ### All options
 
