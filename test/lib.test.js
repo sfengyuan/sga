@@ -43,11 +43,3 @@ describe('lib.js', () => {
     })
   })
 })
-
-describe('Greeting!', () => {
-  describe('Hi', () => {
-    it('should be removed to pass', () => {
-      expect(false, 'Please fix me??').to.equal(true)
-    })
-  })
-})
