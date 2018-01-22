@@ -1,6 +1,6 @@
 {
   "name": "sga",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Project generator with one command",
   "bin": {
     "sga": "bin/sga.js"
@@ -26,7 +26,9 @@
     "commander": "^2.12.2",
     "shelljs": "^0.7.8"
   },
-  "engines" : { "node" : ">=8.9.0" },
+  "engines": {
+    "node": ">=8.9.0"
+  },
   "repository": "https://github.com/jacobsun/sga.git",
   "keywords": [
     "generator",
