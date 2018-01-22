@@ -85,7 +85,7 @@ const taskGitInit = task(() => {
     shell.echo('Error: Git init failed')
     quit()
   }
-  copyConfig(templatesFile(`git/.gitignore`), filePath('.gitignore'))
+  copyConfig(templatesFile(`git/_gitignore`), filePath('.gitignore'))
   copyConfig(templatesFile(`git/README.md`), filePath('README.md'))
 })
 

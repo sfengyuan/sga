@@ -72,7 +72,7 @@ function mergeObject (local, other) {
     }
     if (typeof local[k] !== typeof other[k]) return
     if (typeof other[k] === 'object') return mergeObject(local[k], other[k])
-    if (typeof other[k] === 'array') {
+    if (other[k].constructor === Array) {
       other[k].forEach(ele => {
         if (local[k].indexOf(ele) === -1) local[k].push(ele)
       })

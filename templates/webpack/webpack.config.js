@@ -1,12 +1,12 @@
-const Path = require('path')
-const Webpack = require('webpack')
+const path = require('path')
+const webpack = require('webpack')
 const ExtractText = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
-let src = Path.join(__dirname, 'src')
-let dist = Path.join(__dirname, './dist')
+let src = path.join(__dirname, 'src')
+let dist = path.join(__dirname, './dist')
 let isProduction = process.env.NODE_ENV === 'production'
 let config = {
   entry: {
@@ -143,7 +143,7 @@ let proConfig = {
     new OptimizeCssAssetsPlugin({
       safe: true
     }),
-    new Webpack.optimize.CommonsChunkPlugin({
+    new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       minChunks: function ({ resource }) {
         return resource &&
@@ -151,11 +151,11 @@ let proConfig = {
             resource.match(/\.js$/)
       }
     }),
-    new Webpack.optimize.CommonsChunkPlugin({
+    new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
       minChunks: Infinity
     }),
-    new Webpack.HashedModuleIdsPlugin(),
+    new webpack.HashedModuleIdsPlugin(),
     new CompressionPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
@@ -169,7 +169,7 @@ let proConfig = {
 if (isProduction) {
   config.module.rules = config.module.rules.concat(proConfig.module.rules)
   config.plugins = config.plugins.concat(proConfig.plugins)
-  config.performance = { // performance budget 默认是250kb
+  config.performance = {
     hints: 'warning', // 'error' or false are valid too
     maxEntrypointSize: 40000, // in bytes
     maxAssetSize: 450000 // in bytes
