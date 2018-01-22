@@ -22,7 +22,7 @@ const tool = {
 if (program.npm) tool.npm = true
 if (program.yarn) tool.yarn = true
 if (program.init) taskProjectInit('Project init', tool)
-if (program.git) taskGitInit('Git init')
+if (program.git) taskGitInit('Git init', tool)
 if (program.webpack) taskWebpack('Webpack', tool)
 if (program.vue) taskVue('Vue', tool)
 if (program.eslint) taskEslint('Eslint', tool)
