@@ -1,6 +1,6 @@
 {
   "name": "sga",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Project generator with one command",
   "bin": {
     "sga": "bin/sga.js"
