@@ -1,8 +1,8 @@
 const shell = require('shelljs')
 const fs = require('fs')
 const {ESLINT, BABEL, MOCHA, JEST, POSTCSS, WEBPACK, VUE, VUEDEV} = require('./constant.js')
-const {logInfo, logPrimary, logWarn, filePath, copyConfig, copyFolder, detectTool, packageJson, readTemplatesJson, updatePackageJson, templatesFile, installPackage, quit, createPath} = require('./lib.js')
-
+const {cpConfig, logInfo, logPrimary, logWarn, filePath, copyConfig, copyFolder, detectTool, packageJson, readTemplatesJson, updatePackageJson, templatesFile, installPackage, quit, createPath} = require('./lib.js')
+const path = require('path')
 const addPackage = installPackage(detectTool)
 
 const task = fn => (title, tool) => {
@@ -85,7 +85,8 @@ const taskGitInit = task(() => {
     shell.echo('Error: Git init failed')
     quit()
   }
-  copyConfig(templatesFile(`git/_gitignore`), filePath('.gitignore'))
+  cpConfig(templatesFile(`git/_gitignore`),
+    path.join(process.cwd(), '.gitignore'))
   copyConfig(templatesFile(`git/README.md`), filePath('README.md'))
 })
 

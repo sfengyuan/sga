@@ -110,6 +110,12 @@ const copyConfig = (from, to) => {
   }
 }
 
+const cpConfig = (from, to) => {
+  if (!fs.existsSync(to)) {
+    shell.cp(from, to)
+  }
+}
+
 const filePath = file => path.join(process.cwd(), file)
 module.exports = {
   installPackage,
@@ -124,6 +130,7 @@ module.exports = {
   copyFolder,
   quit,
   copyConfig,
+  cpConfig,
   mergeObject,
   filePath,
   logPrimary,
